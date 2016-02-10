@@ -1,0 +1,38 @@
+{
+  "name" : "react-es6-component",
+  "version" : "0.0.4",
+  "description" : "ES6 React Component that autobinds methods like the non-es6 JSX version does automatically.",
+  "main" : "build/Component.js",
+  "scripts" : {
+    "prepublish" : "gulp build",
+    "start" : "electron ."
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanial/react-fancy-tree.git"
+  },
+  "dependencies": {
+    "underscore" : "1.8.3"
+  },
+  "peerDependencies" : {
+    "react" : "*",
+    "react-dom" : "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.0",
+    "gulp-less": "^3.0.3",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.4",
+    "require-dir": "^0.3.0",
+    "electron-connect" : "^0.3.3",
+    "electron-prebuilt" : "0.34.2",
+    "merge-stream": "^1.0.0",
+    "react" : "*",
+    "react-dom" : "*"
+  }
+}
