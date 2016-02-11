@@ -7,5 +7,5 @@ var electron = require('electron-connect').server.create({
 
 gulp.task('watch', ['build'], function(){
   electron.start();
-  gulp.watch('src/**/*.*', ['build', 'electron-reload']);
+  gulp.watch('src/**/*.*', ['build', electron.reload]);
 });
