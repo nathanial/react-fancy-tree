@@ -1,5 +1,9 @@
 // @if NODE_ENV='production'
+
+import TreeView from './TreeView';
+
 module.exports = {
+  TreeView
 };
 // @endif
 
