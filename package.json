@@ -1,7 +1,7 @@
 {
   "name" : "react-fancy-tree",
-  "version" : "0.0.3",
-  "description" : "ES6 React Component that autobinds methods like the non-es6 JSX version does automatically.",
+  "version" : "0.0.4",
+  "description" : "React wrapper for the Fancy Tree library.",
   "main" : "build/index.js",
   "scripts" : {
     "prepublish" : "gulp build",
