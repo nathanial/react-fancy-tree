@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'underscore';
 import TreeView from './TreeView.jsx';
+import "./react-fancy-tree.less";
 
 class Example extends React.Component {
   constructor(){
