@@ -5,23 +5,24 @@ import './vendor/jquery.fancytree/jquery.fancytree.edit';
 import './vendor/jquery.fancytree/jquery.fancytree.dnd';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import ContextMenuExtension from './ContextMenuExtension';
 
 export default class TreeView extends React.Component {
 
   static propTypes = {
-    nodes: React.PropTypes.array.isRequired,
+    nodes: PropTypes.array.isRequired,
 
-    onDoubleClick: React.PropTypes.func,
-    onSelected: React.PropTypes.func,
-    onRename: React.PropTypes.func,
-    style: React.PropTypes.object,
-    onContextMenuClick: React.PropTypes.func,
-    selectedID: React.PropTypes.string,
+    onDoubleClick: PropTypes.func,
+    onSelected: PropTypes.func,
+    onRename: PropTypes.func,
+    style: PropTypes.object,
+    onContextMenuClick: PropTypes.func,
+    selectedID: PropTypes.string,
 
-    onDragStart: React.PropTypes.func,
-    onDragEnter: React.PropTypes.func,
-    onDragDrop: React.PropTypes.func,
+    onDragStart: PropTypes.func,
+    onDragEnter: PropTypes.func,
+    onDragDrop: PropTypes.func,
 
   };
 
