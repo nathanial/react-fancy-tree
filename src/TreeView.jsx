@@ -5,10 +5,9 @@ import './vendor/jquery.fancytree/jquery.fancytree.edit';
 import './vendor/jquery.fancytree/jquery.fancytree.dnd';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Component from 'react-es6-component';
 import ContextMenuExtension from './ContextMenuExtension';
 
-export default class TreeView extends Component {
+export default class TreeView extends React.Component {
 
   static propTypes = {
     nodes: React.PropTypes.array.isRequired,
@@ -100,13 +99,13 @@ export default class TreeView extends Component {
     $tree.fancytree('destroy');
   }
 
-  getTree(){
+  getTree = () => {
     const $node = $(ReactDOM.findDOMNode(this));
     const $tree = $node.find('.fancytree');
     return $tree.fancytree('getTree');
   }
 
-  selectByID(id){
+  selectByID = (id) => {
     if(!id){
       return;
     }
@@ -127,7 +126,7 @@ export default class TreeView extends Component {
     select(tree.rootNode);
   }
 
-  deselectAll(){
+  deselectAll = () => {
     const tree = this.getTree();
     function deselectChildren(children){
       if(!children){

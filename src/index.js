@@ -1,4 +1,4 @@
-import TreeView from './TreeView';
+import TreeView from './TreeView.jsx';
 
 module.exports = {
   TreeView

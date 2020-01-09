@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'underscore';
-import TreeView from './TreeView';
+import TreeView from './TreeView.jsx';
 
 class Example extends React.Component {
   constructor(){
