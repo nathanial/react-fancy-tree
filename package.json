@@ -1,11 +1,10 @@
 {
-  "name" : "react-fancy-tree",
-  "version" : "0.0.5",
-  "description" : "React wrapper for the Fancy Tree library.",
-  "main" : "build/index.js",
-  "scripts" : {
-    "prepublish" : "gulp dist",
-    "start" : "electron ."
+  "name": "react-fancy-tree",
+  "version": "1.0.0",
+  "description": "React wrapper for the Fancy Tree library.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
   },
   "files": [
     "build"
@@ -15,29 +14,17 @@
     "url": "git://github.com/nathanial/react-fancy-tree.git"
   },
   "dependencies": {
-    "underscore" : "1.8.3",
-    "react-es6-component" : "*"
-  },
-  "peerDependencies" : {
-    "react" : "*",
-    "react-dom" : "*",
-    "jquery": "*",
-    "jquery-ui": "*"
+    "jquery": "3.4.1",
+    "jquery-ui": "1.12.1",
+    "react": "*",
+    "react-dom": "16.12.0",
+    "react-es6-component": "^0.0.4",
+    "underscore": "1.8.3"
   },
   "devDependencies": {
-    "jquery": "2.1.4",
-    "jquery-ui": "1.10.5",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.0",
-    "gulp-less": "^3.0.3",
-    "gulp-preprocess": "^2.0.0",
-    "gulp-util": "^3.0.6",
-    "gulp-watch": "^4.3.4",
-    "require-dir": "^0.3.0",
-    "electron-connect" : "^0.3.3",
-    "electron-prebuilt" : "0.34.2",
-    "merge-stream": "^1.0.0",
-    "react" : "*",
-    "react-dom" : "*"
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.4"
   }
 }

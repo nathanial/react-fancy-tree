@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'underscore';
-import Component from 'react-es6-component';
 import TreeView from './TreeView';
 
-class Example extends Component {
-  static propTypes = { }
-
+class Example extends React.Component {
   constructor(){
     super(...arguments);
     this.state = {
